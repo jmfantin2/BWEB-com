@@ -2,6 +2,9 @@ module.exports = {
   content: ['./src/**/*.{html,njk,md}', './index.njk'],
   theme: {
     extend: {
+      backgroundImage: {
+        thGrid: "url('/assets/images/grid.svg')",
+      },
       fontFamily: {
         sans: ['Inter', 'sans-serif'], // Define "Inter" como padrão
         thBurtons: ['Burtons', 'sans-serif'],
