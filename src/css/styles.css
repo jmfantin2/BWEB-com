@@ -2,12 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Define custom classes in @layer */
-@layer utilities {
-  .bg-thBase {
-    background-color: theme('colors.thBase');
-  }
-  .text-thText {
-    color: theme('colors.thText');
-  }
+@font-face {
+  font-family: 'Burtons';
+  src: url('/fonts/Burtons.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }

@@ -1,6 +1,6 @@
 module.exports = function (eleventyConfig) {
-  // Tell Eleventy to copy `src/css/` into `_site/css/`
-  eleventyConfig.addPassthroughCopy({ 'src/css': 'css' });
+  // Copy CSS and fonts to `_site/`
+  eleventyConfig.addPassthroughCopy({ 'src/css': 'css', 'src/fonts': 'fonts' });
 
   return {
     dir: {
