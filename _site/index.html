@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tech Landing Page</title>
+  <title>brasaweb.com</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 
   <!-- Load Tailwind -->
   <link href="/css/tailwind.css" rel="stylesheet" />
@@ -12,7 +23,30 @@
   <link href="/css/styles.css" rel="stylesheet" />
 </head>
 
-  <body>
+  <body class="font-sans bg-thBase text-thText">
+    <nav
+  class="bg-thBase text-thText flex items-center justify-between px-6 py-4 shadow-lg"
+>
+  <!-- Logo + Nome -->
+  <div class="flex items-center space-x-3">
+    <img
+      src="/assets/images/logo.jpg"
+      alt="brasaweb logo"
+      class="h-10 w-auto rounded-full"
+    />
+    <span class="text-2xl font-bold">brasaweb</span>
+  </div>
+
+  <!-- Placeholder Button -->
+  <a
+    href="https://linkedin.com/in/jmfantin"
+    target="_blank"
+    class="opacity-40 px-4 py-2 bg-gradient-to-br from-thPslPink to-thAccent font-medium rounded-lg hover:opacity-90 text-thBase transition"
+  >
+    Come back later
+  </a>
+</nav>
+
     
 <!-- fullpage flameLoader lasts two seconds--->
 <div
@@ -164,31 +198,14 @@
 </script>
 
 
-<div
-  class="bg-thBase text-thText flex items-center justify-center min-h-screen"
->
-  <div class="text-center max-w-3xl px-6">
-    <h1 class="text-5xl font-bold">
-      The Future of <span class="text-thAccent">Tech</span> Starts Here
+<div class="bg-thBase text-thText flex items-center justify-center">
+  <div class="text-center max-w-3xl px-6 py-20">
+    <h1
+      class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#C477BC] to-thAccent font-thBurtons"
+    >
+      software by<br />trailblazers
     </h1>
-    <p class="mt-4 text-lg opacity-80">
-      Experience cutting-edge innovation with our AI-powered solutions. Built
-      for the modern world.
-    </p>
-    <div class="mt-8 space-x-4">
-      <a
-        href="#"
-        class="px-6 py-3 bg-thAccent text-thBase font-medium rounded-lg shadow-lg hover:opacity-90 transition"
-      >
-        Get Started
-      </a>
-      <a
-        href="#"
-        class="px-6 py-3 border border-thAccent text-thText rounded-lg hover:bg-thAccent/20 transition"
-      >
-        Learn More
-      </a>
-    </div>
+    <p class="mt-4 text-lg opacity-80">Portfolio is in the making!</p>
   </div>
 </div>
 

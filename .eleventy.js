@@ -1,6 +1,9 @@
 module.exports = function (eleventyConfig) {
   // Copy CSS and fonts to `_site/`
-  eleventyConfig.addPassthroughCopy({ 'src/css': 'css', 'src/fonts': 'fonts' });
+  eleventyConfig.addPassthroughCopy({ 'src/assets': 'assets' });
+  eleventyConfig.addPassthroughCopy({ 'src/css': 'css' });
+  eleventyConfig.addPassthroughCopy({ 'src/fonts': 'fonts' });
+  eleventyConfig.addPassthroughCopy('src/favicon.ico');
 
   return {
     dir: {

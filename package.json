@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "refresh": "npx tailwindcss -i ./src/css/styles.css -o ./src/css/tailwind.css --watch",
     "dev": "npx eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
