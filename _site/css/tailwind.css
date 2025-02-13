@@ -628,11 +628,6 @@ video {
   border-radius: 0.5rem;
 }
 
-.bg-thAccent {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 123 56 / var(--tw-bg-opacity, 1));
-}
-
 .bg-thBase {
   --tw-bg-opacity: 1;
   background-color: rgb(25 25 25 / var(--tw-bg-opacity, 1));
@@ -654,11 +649,6 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.via-thAccent {
-  --tw-gradient-to: rgb(255 123 56 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #FF7B38 var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
 .to-thAccent {
   --tw-gradient-to: #FF7B38 var(--tw-gradient-to-position);
 }
@@ -678,9 +668,9 @@ video {
   padding-right: 1.5rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .py-20 {
@@ -691,11 +681,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .text-center {
@@ -747,16 +732,12 @@ video {
   color: transparent;
 }
 
-.opacity-20 {
-  opacity: 0.2;
+.opacity-40 {
+  opacity: 0.4;
 }
 
 .opacity-80 {
   opacity: 0.8;
-}
-
-.opacity-40 {
-  opacity: 0.4;
 }
 
 .shadow-lg {
@@ -781,16 +762,6 @@ video {
   font-weight: normal;
 
   font-style: normal;
-}
-
-.hover\:text-thText:hover {
-  --tw-text-opacity: 1;
-  color: rgb(209 215 224 / var(--tw-text-opacity, 1));
-}
-
-.hover\:text-thBase:hover {
-  --tw-text-opacity: 1;
-  color: rgb(25 25 25 / var(--tw-text-opacity, 1));
 }
 
 .hover\:opacity-90:hover {
