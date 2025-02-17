@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   {% include "head.njk" %}
-  <body class="font-sans bg-thBase text-thText">
+  <body class="font-sans bg-thBase text-thText h-[100vh]">
     {% include "header.njk" %}
     {{ content | safe }}
+    {% include "footer.njk" %}
   </body>
 </html>
