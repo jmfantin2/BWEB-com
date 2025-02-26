@@ -6,8 +6,8 @@
  preserveAspectRatio="xMidYMid meet">
 <defs>
   <linearGradient id="gradientFill" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%" stop-color="#C477BC"/>  <!-- Bottom-left color -->
-    <stop offset="100%" stop-color="#FF7B38"/> <!-- Top-right color -->
+    <stop offset="0%" stop-color="#93989f"/>  <!-- Bottom-left color -->
+    <stop offset="100%" stop-color="#D1D7E0"/> <!-- Top-right color -->
   </linearGradient>
 </defs>
 <g transform="translate(0.000000,888.000000) scale(0.100000,-0.100000)" fill="url(#gradientFill)" 

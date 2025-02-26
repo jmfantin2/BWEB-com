@@ -790,10 +790,6 @@ video {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -804,12 +800,6 @@ video {
 
 .bg-thGrid {
   background-image: url('/assets/images/grid.svg');
-}
-
-.from-\[\#0876ec\] {
-  --tw-gradient-from: #0876ec var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(8 118 236 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-\[\#C477BC\] {
@@ -850,14 +840,6 @@ video {
 .via-thAccent {
   --tw-gradient-to: rgb(255 123 56 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #FF7B38 var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
-.to-\[\#C477BC\] {
-  --tw-gradient-to: #C477BC var(--tw-gradient-to-position);
-}
-
-.to-sky-300 {
-  --tw-gradient-to: #7dd3fc var(--tw-gradient-to-position);
 }
 
 .to-thAccent {
@@ -910,11 +892,6 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -927,6 +904,14 @@ video {
 
 .pb-0 {
   padding-bottom: 0px;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .pt-8 {
@@ -955,11 +940,6 @@ video {
   line-height: 2.25rem;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -968,6 +948,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -1121,6 +1106,16 @@ video {
 
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .md\:text-lg {
