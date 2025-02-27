@@ -13,7 +13,7 @@ module.exports = {
         thBase: '#191919',
         thAccent: '#FF7B38',
         thText: '#D1D7E0',
-        thPslPink: '#C477BC',
+        thPslPink: '#cf73ac',
       },
       animation: {
         flicker: 'flicker 1.5s infinite ease-in-out',

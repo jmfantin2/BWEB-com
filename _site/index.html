@@ -1,334 +1,337 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>brasaweb.com</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>brasaweb.com</title>
 
-  <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
-
-  <!-- Load Tailwind -->
-  <link href="/css/tailwind.css" rel="stylesheet" />
-
-  <!-- Load Custom Styles -->
-  <link href="/css/styles.css" rel="stylesheet" />
-</head>
-
-  <body class="font-sans bg-thBase text-thText h-[100vh]">
-    <nav class="bg-thGrid text-thText flex items-center justify-between px-6 py-4">
-  <!-- Logo + Nome -->
-  <div class="flex items-center space-x-3">
-    <img
-      src="/assets/brasaweb.svg"
-      alt="Brasaweb Logo"
-      class="h-10 w-auto rounded-full"
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
     />
 
-    <span
-      class="text-2xl bg-clip-text text-transparent bg-gradient-to-tr from-thAccent to-thPslPink font-bold"
-      >brasaweb</span
+    <!-- Load Tailwind -->
+    <link href="/css/tailwind.css" rel="stylesheet" />
+
+    <!-- Load Custom Styles -->
+    <link href="/css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body class="font-sans bg-thBase text-thText h-[100vh]">
+    <nav
+      class="bg-thGrid text-thText flex items-center justify-between px-6 py-4"
     >
-  </div>
+      <!-- Logo + Nome -->
+      <div class="flex items-center space-x-3">
+        <img
+          src="/assets/brasaweb.svg"
+          alt="Brasaweb Logo"
+          class="h-10 w-auto rounded-full"
+        />
 
-  <!-- Placeholder Button -->
-  <a
-    href="mailto:brasaweb@outlook.com"
-    target="_blank"
-    class="opacity-60 px-2 py-1 bg-gradient-to-br from-thPslPink to-thAccent rounded-lg hover:opacity-90 text-thBase transition"
-  >
-    E-mail us
-  </a>
-</nav>
+        <span
+          class="text-2xl bg-clip-text text-transparent bg-gradient-to-tr from-thAccent to-thPslPink font-bold"
+          >brasaweb</span
+        >
+      </div>
 
-    
-<!-- fullpage flameLoader lasts two seconds--->
-<div
-  id="flameLoader"
-  class="bg-thBase fixed inset-0 flex flex-col justify-center items-center z-[9999]"
->
-  <div class="fire">
-    <div class="flames">
-      <div class="flame"></div>
-      <div class="flame"></div>
-      <div class="flame"></div>
-      <div class="flame"></div>
-      <div class="flame"></div>
-    </div>
-  </div>
-</div>
+      <!-- Placeholder Button -->
+      <a
+        href="mailto:brasaweb@outlook.com"
+        target="_blank"
+        class="opacity-60 px-2 py-1 bg-gradient-to-br from-thPslPink to-thAccent rounded-lg hover:opacity-90 text-thBase transition"
+      >
+        E-mail us
+      </a>
+    </nav>
 
-<style>
-  #flameLoader {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-  }
-
-  .fire {
-    position: relative;
-    height: 6rem;
-    width: 6rem;
-  }
-  .flames {
-    position: absolute;
-    bottom: 40%;
-    left: 50%;
-    width: 60%;
-    height: 60%;
-    transform: translateX(-50%) rotate(45deg);
-  }
-  .flame {
-    position: absolute;
-    right: 0%;
-    bottom: 0%;
-    width: 0%;
-    height: 0%;
-    background-color: #fdc569;
-    border-radius: 1vw;
-  }
-  .flame:nth-child(1) {
-    animation: flameodd 0.7s ease-in-out;
-  }
-  .flame:nth-child(2) {
-    animation: flameeven 1s ease-in-out;
-  }
-  .flame:nth-child(3) {
-    animation: flameeven 1.24s ease-in-out;
-  }
-  .flame:nth-child(4) {
-    animation: flameodd 1.45s ease-in-out;
-  }
-  .flame:nth-child(5) {
-    animation: flameodd 1.736s ease-in-out;
-  }
-
-  @keyframes flameodd {
-    0%,
-    100% {
-      width: 0%;
-      height: 0%;
-    }
-    25% {
-      width: 100%;
-      height: 100%;
-    }
-    0% {
-      background-color: #fdc569;
-      z-index: 1000000;
-    }
-    40% {
-      background-color: #ff7b38;
-      z-index: 1000000;
-    }
-    100% {
-      background-color: #ff7033;
-      z-index: -10;
-    }
-    0% {
-      right: 0%;
-      bottom: 0%;
-    }
-    25% {
-      right: 1%;
-      bottom: 2%;
-    }
-    100% {
-      right: 150%;
-      bottom: 170%;
-    }
-  }
-
-  @keyframes flameeven {
-    0%,
-    100% {
-      width: 0%;
-      height: 0%;
-    }
-    25% {
-      width: 100%;
-      height: 100%;
-    }
-    0% {
-      background-color: #ff7033;
-      z-index: 1000000;
-    }
-    40% {
-      background-color: #ff7b38;
-      z-index: 1000000;
-    }
-    100% {
-      background-color: #fdc569;
-      z-index: -10;
-    }
-    0% {
-      right: 0%;
-      bottom: 0%;
-    }
-    25% {
-      right: 2%;
-      bottom: 1%;
-    }
-    100% {
-      right: 170%;
-      bottom: 150%;
-    }
-  }
-</style>
-
-<script>
-  setTimeout(() => {
-    document.getElementById('flameLoader').style.opacity = '0';
-    setTimeout(() => {
-      document.getElementById('flameLoader').style.display = 'none';
-    }, 500); // Smooth fade-out
-  }, 2000);
-</script>
-
-
-<main class="bg-thGrid text-thText flex justify-center h-auto">
-  <section class="text-center max-w-3xl p-6 pt-4 pb-16">
-    <h1
-      class="text-xl md:text-3xl leading-none pb-0 mb-0 font-bold text-center text-transparent bg-clip-text bg-gradient-to-br from-[#C477BC] via-[#C477BC] to-thAccent font-thBurtons"
+    <!-- fullpage flameLoader lasts two seconds--->
+    <div
+      id="flameLoader"
+      class="bg-thBase fixed inset-0 flex flex-col justify-center items-center z-[9999]"
     >
-      <br />THE YEAR IS 2025
-    </h1>
-    <h1
-      class="text-3xl md:text-5xl leading-none pb-0 mb-0 font-bold text-center text-transparent bg-clip-text bg-gradient-to-br from-[#C477BC] to-thAccent font-thBurtons"
-    >
-      <br />IT is affordable and<br />BETTER THAN EVER
-    </h1>
-
-    <div class="relative flex justify-center items-center">
-      <div class="relative w-16 h-16">
-        <!-- Main Flame -->
-        <div
-          class="absolute inset-0 w-full h-full bg-gradient-to-t from-orange-500 via-[#C477BC] to-transparent rounded-full blur-xl opacity-90 animate-flicker"
-        ></div>
-
-        <!-- Inner Glow -->
-        <div
-          class="absolute inset-0 w-10 h-10 bg-orange-400 rounded-full blur-md opacity-80 animate-flicker delay-100"
-        ></div>
-
-        <!-- Secondary Flickers -->
-        <div
-          class="absolute left-1/2 -translate-x-1/2 -top-2 w-6 h-6 bg-[#e9ab4e] rounded-full blur-lg opacity-80 animate-flicker delay-200"
-        ></div>
-        <div
-          class="absolute left-1/3 -translate-x-1/2 -top-4 w-4 h-4 bg-[#C477BC] rounded-full blur-lg opacity-70 animate-flicker delay-300"
-        ></div>
+      <div class="fire">
+        <div class="flames">
+          <div class="flame"></div>
+          <div class="flame"></div>
+          <div class="flame"></div>
+          <div class="flame"></div>
+          <div class="flame"></div>
+        </div>
       </div>
     </div>
 
-    <p class="pt-8 text-lg opacity-80">
-      We're currently running on stealth mode.
-    </p>
-  </section>
-</main>
+    <style>
+      #flameLoader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+      }
+
+      .fire {
+        position: relative;
+        height: 6rem;
+        width: 6rem;
+      }
+      .flames {
+        position: absolute;
+        bottom: 40%;
+        left: 50%;
+        width: 60%;
+        height: 60%;
+        transform: translateX(-50%) rotate(45deg);
+      }
+      .flame {
+        position: absolute;
+        right: 0%;
+        bottom: 0%;
+        width: 0%;
+        height: 0%;
+        background-color: #fdc569;
+        border-radius: 1vw;
+      }
+      .flame:nth-child(1) {
+        animation: flameodd 0.7s ease-in-out;
+      }
+      .flame:nth-child(2) {
+        animation: flameeven 1s ease-in-out;
+      }
+      .flame:nth-child(3) {
+        animation: flameeven 1.24s ease-in-out;
+      }
+      .flame:nth-child(4) {
+        animation: flameodd 1.45s ease-in-out;
+      }
+      .flame:nth-child(5) {
+        animation: flameodd 1.736s ease-in-out;
+      }
+
+      @keyframes flameodd {
+        0%,
+        100% {
+          width: 0%;
+          height: 0%;
+        }
+        25% {
+          width: 100%;
+          height: 100%;
+        }
+        0% {
+          background-color: #fdc569;
+          z-index: 1000000;
+        }
+        40% {
+          background-color: #ff7b38;
+          z-index: 1000000;
+        }
+        100% {
+          background-color: #ff7033;
+          z-index: -10;
+        }
+        0% {
+          right: 0%;
+          bottom: 0%;
+        }
+        25% {
+          right: 1%;
+          bottom: 2%;
+        }
+        100% {
+          right: 150%;
+          bottom: 170%;
+        }
+      }
+
+      @keyframes flameeven {
+        0%,
+        100% {
+          width: 0%;
+          height: 0%;
+        }
+        25% {
+          width: 100%;
+          height: 100%;
+        }
+        0% {
+          background-color: #ff7033;
+          z-index: 1000000;
+        }
+        40% {
+          background-color: #ff7b38;
+          z-index: 1000000;
+        }
+        100% {
+          background-color: #fdc569;
+          z-index: -10;
+        }
+        0% {
+          right: 0%;
+          bottom: 0%;
+        }
+        25% {
+          right: 2%;
+          bottom: 1%;
+        }
+        100% {
+          right: 170%;
+          bottom: 150%;
+        }
+      }
+    </style>
+
+    <script>
+      setTimeout(() => {
+        document.getElementById('flameLoader').style.opacity = '0';
+        setTimeout(() => {
+          document.getElementById('flameLoader').style.display = 'none';
+        }, 500); // Smooth fade-out
+      }, 2000);
+    </script>
+
+    <main class="bg-thGrid text-thText flex justify-center h-auto">
+      <section class="text-center max-w-3xl p-6 pt-4 pb-16">
+        <h1
+          class="text-xl md:text-3xl leading-none pb-0 mb-0 font-bold text-center text-transparent bg-clip-text bg-gradient-to-br from-[#cf73ac] via-[#cf73ac] to-thAccent font-thBurtons"
+        >
+          <br />THE YEAR IS 2025
+        </h1>
+        <h1
+          class="text-3xl md:text-5xl leading-none pb-0 mb-0 font-bold text-center text-transparent bg-clip-text bg-gradient-to-br from-[#cf73ac] to-thAccent font-thBurtons"
+        >
+          <br />IT is affordable and<br />BETTER THAN EVER
+        </h1>
+
+        <div class="relative flex justify-center items-center">
+          <div class="relative w-16 h-16">
+            <!-- Main Flame -->
+            <div
+              class="absolute inset-0 w-full h-full bg-gradient-to-t from-orange-500 via-[#cf73ac] to-transparent rounded-full blur-xl opacity-90 animate-flicker"
+            ></div>
+
+            <!-- Inner Glow -->
+            <div
+              class="absolute inset-0 w-10 h-10 bg-orange-400 rounded-full blur-md opacity-80 animate-flicker delay-100"
+            ></div>
+
+            <!-- Secondary Flickers -->
+            <div
+              class="absolute left-1/2 -translate-x-1/2 -top-2 w-6 h-6 bg-[#e9ab4e] rounded-full blur-lg opacity-80 animate-flicker delay-200"
+            ></div>
+            <div
+              class="absolute left-1/3 -translate-x-1/2 -top-4 w-4 h-4 bg-[#cf73ac] rounded-full blur-lg opacity-70 animate-flicker delay-300"
+            ></div>
+          </div>
+        </div>
+
+        <p class="pt-8 text-lg opacity-80">
+          We're currently running on stealth mode.
+        </p>
+      </section>
+    </main>
 
     <footer class="bg-gradient-to-b from-thBase to-thBase">
-  <div class="max-w-7xl mx-auto px-8 py-24">
-    <div
-      class="flex lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col"
-    >
-      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-        <a
-          href="/#"
-          class="flex gap-2 justify-center md:justify-start items-center opacity-80"
-          aria-current="page"
+      <div class="max-w-7xl mx-auto px-8 py-24">
+        <div
+          class="flex lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col"
         >
-          <img
-            src="/assets/brasaweb-footer.svg"
-            alt="Presell Logo"
-            class="h-6 w-auto"
-          />
-          <strong class="font-extrabold tracking-tight text-thText md:text-lg">
-            <p class="text-thText font-bold bg-transparent">brasaweb</p>
-          </strong>
-        </a>
-
-        <p
-          class="mt-3 text-sm text-thText/80 md:text-left text-center flex flex-col gap-2"
-        >
-          <span>
-            We deliver state of the art systems for the web at low cost.
-          </span>
-        </p>
-        <p class="mt-3 text-sm text-thText/60">
-          Copyright © 2025
-          <br />
-          All rights reserved
-        </p>
-      </div>
-
-      <div
-        class="flex-grow flex flex-wrap justify-center -mb-10 md:mt-0 mt-10 text-center"
-      >
-        <div class="lg:w-1/3 md:w-1/2 w-full px-4">
           <div
-            class="font-semibold tracking-widest text-sm md:text-left mb-3 text-thAccent/80"
-          >
-            LINKS
-          </div>
-
-          <div
-            class="flex flex-col justify-center items-center md:items-start gap-2 mb-10 text-sm"
+            class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left"
           >
             <a
-              href="mailto:brasaweb@outlook.com"
-              target="_blank"
-              class="text-thText hover:opacity-80"
-              aria-label="Contact Support"
+              href="/#"
+              class="flex gap-2 justify-center md:justify-start items-center opacity-80"
+              aria-current="page"
             >
-              Contact
+              <img
+                src="/assets/brasaweb-footer.svg"
+                alt="Presell Logo"
+                class="h-6 w-auto"
+              />
+              <strong
+                class="font-extrabold tracking-tight text-thText md:text-lg"
+              >
+                <p class="text-thText font-bold bg-transparent">brasaweb</p>
+              </strong>
             </a>
-            <a
-              href="https://linkedin.com/in/jmfantin"
-              target="_blank"
-              class="text-thText hover:opacity-80"
+
+            <p
+              class="mt-3 text-sm text-thText/80 md:text-left text-center flex flex-col gap-2"
             >
-              LinkedIn
-            </a>
+              <span>
+                We deliver state of the art systems for the web at low cost.
+              </span>
+            </p>
+            <p class="mt-3 text-sm text-thText/60">
+              Copyright © 2025
+              <br />
+              All rights reserved
+            </p>
           </div>
-        </div>
-
-        <div class="lg:w-1/3 md:w-1/2 w-full px-4">
-          <div
-            class="font-semibold tracking-widest text-sm md:text-left mb-3 text-thAccent/80"
-          >
-            LEGAL
-          </div>
 
           <div
-            class="flex flex-col justify-center items-center md:items-start gap-2 mb-10 text-sm"
+            class="flex-grow flex flex-wrap justify-center -mb-10 md:mt-0 mt-10 text-center"
           >
-            <a href="/lgpd/tos" class="text-thText hover:opacity-80">
-              Terms of Service
-            </a>
-            <a href="/lgpd/pp" class="text-thText hover:opacity-80">
-              Privacy Policy
-            </a>
+            <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+              <div
+                class="font-semibold tracking-widest text-sm md:text-left mb-3 text-thAccent/80"
+              >
+                LINKS
+              </div>
+
+              <div
+                class="flex flex-col justify-center items-center md:items-start gap-2 mb-10 text-sm"
+              >
+                <a
+                  href="mailto:brasaweb@outlook.com"
+                  target="_blank"
+                  class="text-thText hover:opacity-80"
+                  aria-label="Contact Support"
+                >
+                  Contact
+                </a>
+                <a
+                  href="https://linkedin.com/in/jmfantin"
+                  target="_blank"
+                  class="text-thText hover:opacity-80"
+                >
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+
+            <div class="lg:w-1/3 md:w-1/2 w-full px-4">
+              <div
+                class="font-semibold tracking-widest text-sm md:text-left mb-3 text-thAccent/80"
+              >
+                LEGAL
+              </div>
+
+              <div
+                class="flex flex-col justify-center items-center md:items-start gap-2 mb-10 text-sm"
+              >
+                <a href="/lgpd/tos" class="text-thText hover:opacity-80">
+                  Terms of Service
+                </a>
+                <a href="/lgpd/pp" class="text-thText hover:opacity-80">
+                  Privacy Policy
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
-
+    </footer>
   </body>
 </html>

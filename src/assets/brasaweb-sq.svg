@@ -7,7 +7,7 @@
 
 <defs>
   <linearGradient id="gradientFill" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%" stop-color="#C477BC"/>  <!-- Bottom-left color -->
+    <stop offset="0%" stop-color="#cf73ac"/>  <!-- Bottom-left color -->
     <stop offset="100%" stop-color="#FF7B38"/> <!-- Top-right color -->
   </linearGradient>
 </defs>
